@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bookshelf Apps by Hansen</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bookshelf Apps by Hansen</h1>
+      <div class="search">
+        <p>Search</p>
+        <form action="#" class="search-form">
+          <input type="text" class="search-input" />
+          <button type="submit" class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+    </header>
+    <div class="wrapper">
+      <form action="#" class="form flex-column">
+        <h2>Insert New Book</h2>
+        <label for="title">Title</label>
+        <input type="text" id="title" required />
+        <label for="author">Author</label>
+        <input type="text" id="author" required />
+        <label for="year">Year</label>
+        <input type="text" id="year" required />
+        <div class="button-wrapper">
+          <button type="submit" class="submit-not-finished">
+            Not Finished
+          </button>
+          <button type="submit" class="submit-finished">Finished</button>
+        </div>
+      </form>
+      <div class="bookshelf">
+        <div class="not-finished-wrapper flex-column">
+          <h2>Not Finished</h2>
+          <div class="not-finished-container"></div>
+        </div>
+        <div class="finished-wrapper flex-column">
+          <h2>Finished</h2>
+          <div class="finished-container"></div>
+        </div>
+      </div>
+    </div>
+    <div class="search-wrapper flex-column">
+      <h2 class="title-search">Search result:</h2>
+      <button class="back-button">Back</button>
+      <div class="search-container"></div>
+    </div>
+    <div class="edit-tab">
+      <form action="#" class="flex-column edit-form">
+        <h2>Edit Book</h2>
+        <label for="title">Title</label>
+        <input type="text" id="new-title" required />
+        <label for="author">Author</label>
+        <input type="text" id="new-author" required />
+        <label for="year">Year</label>
+        <input type="text" id="new-year" required />
+        <button type="submit" class="done-edit-button">Done</button>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
